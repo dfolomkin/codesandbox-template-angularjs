@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jasmine": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:jasmine/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "import", "jasmine"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "no-console": "warn",
+    "import/no-unresolved": 0,
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/no-var-requires": "warn",
+    "jasmine/no-spec-dupes": 0
+  },
+  "ignorePatterns": ["webpack.config.js", "karma.conf.js"]
+}
